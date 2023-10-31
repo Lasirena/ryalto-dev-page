@@ -60,6 +60,15 @@ h2 {
   font-weight: 800;
 }
 
+h2::before {
+  content: '';
+  position: absolute;
+  height: 8px;
+  width: 80px;
+  background-color: #1e96fc;
+  transform: translateY(96px);
+}
+
 h3 {
   font-size: 40px;
   font-weight: 800;
@@ -107,7 +116,7 @@ Buttons
 }
 
 .btn-primary:hover,
-:focus {
+.btn-primary:focus {
   box-shadow: inset 4rem -4rem 0 0 #ffc600;
   color: #000000;
 }
@@ -119,8 +128,20 @@ Buttons
 }
 
 .btn-outline:hover,
-:focus {
+.btn-outline:focus {
   box-shadow: inset 4rem -4rem 0 0 #ffc600;
+}
+
+.btn-pagination {
+  border-radius: 38px;
+  padding: 24px 32px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.btn-pagination.active {
+  background-color: #1e96fc;
+  color: #ffffff;
 }
 
 /* 
@@ -185,6 +206,7 @@ Blog styles
   gap: 24px;
   align-items: flex-start;
   justify-content: space-between;
+  margin-bottom: 48px;
 }
 
 .blog-card {
@@ -259,4 +281,80 @@ Blog styles
 
 .blog-card-date {
   color: #828282;
+}
+
+.blog-navigation {
+  margin-bottom: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blog-pagination {
+  display: flex;
+  gap: 8px;
+}
+
+.blog-search-area {
+  font-size: 20px;
+  padding: 32px;
+  border-radius: 50px;
+  border: none;
+  background-color: #f0f4f8;
+}
+/* 
+==================
+Main navbar styles
+================== 
+*/
+
+.nav-main-component {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 52px;
+}
+
+.nav-main-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-main-logo {
+  max-width: 148px;
+}
+
+.nav-main-logo-text {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.nav-main-links-container {
+  display: flex;
+  gap: 60px;
+}
+
+.nav-main-link {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.nav-main-link:hover {
+  color: #1e96fc;
+}
+
+/* 
+==================
+Footer styles
+================== 
+*/
+
+footer {
+  padding-top: 52px;
+  padding-bottom: 52px;
 }

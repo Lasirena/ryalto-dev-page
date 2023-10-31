@@ -20,14 +20,20 @@
   <body>
     <header>
       <nav class="nav-main-component">
-        <ul>
-          <li>Logo</li>
-          <li>Logo Title</li>
+        <ul class="nav-main-logo-container">
+          <li>
+            <img
+              class="nav-main-logo"
+              src="/assets/img/logo/ryalto-logo-lg.png"
+              alt="Ryalto Logo"
+            />
+          </li>
+          <li class="nav-main-logo-text">Developer Page</li>
         </ul>
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Meet the Team</a></li>
+        <ul class="nav-main-links-container">
+          <li><a class="nav-main-link" href="#">About</a></li>
+          <li><a class="nav-main-link" href="#">Careers</a></li>
+          <li><a class="nav-main-link" href="#">Meet the Team</a></li>
         </ul>
       </nav>
       <section class="intro-component">
@@ -203,12 +209,19 @@
         </section>
         <section class="blog-navigation">
           <ul class="blog-pagination">
-            <li>Prev</li>
-            <li>1</li>
-            <li>2</li>
-            <li>Next</li>
+            <li><a class="btn-pagination" href="#">Prev</a></li>
+            <li><a class="btn-pagination active" href="#">1</a></li>
+            <li><a class="btn-pagination" href="#">2</a></li>
+            <li><a class="btn-pagination" href="#">3</a></li>
+            <li><a class="btn-pagination" href="#">Next</a></li>
           </ul>
-          <div class="blog-search-area"></div>
+          <input
+            class="blog-search-area"
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Enter keywords to search"
+          />
         </section>
       </div>
     </article>
