@@ -209,6 +209,8 @@ Intro styles
 
 .social-links-list-lg {
   margin-bottom: 120px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /* 
@@ -230,11 +232,8 @@ Blog styles
   margin-bottom: 48px;
 }
 
-.blog-card a {
-  display: block;
-}
-
 .blog-card {
+  display: block;
   padding: 36px;
   background-color: #f0f4f8;
   border-radius: 20px;
