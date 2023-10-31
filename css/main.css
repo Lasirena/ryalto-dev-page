@@ -213,6 +213,16 @@ Intro styles
   justify-content: space-evenly;
 }
 
+.social-link-lg {
+  border-radius: 50%;
+  color: #ffc600;
+}
+
+.social-link-lg:hover {
+  box-shadow: #235f943d 0 10px 20px;
+  transform: translateY(-5px);
+}
+
 /* 
 ==================
 Blog styles
@@ -410,4 +420,21 @@ footer {
 
 .footer-sitemap a:hover {
   color: #1e96fc;
+}
+
+.social-links-list-sm {
+  display: flex;
+  gap: 34px;
+}
+
+.social-link-sm {
+  max-width: 64px;
+  max-height: 64px;
+  border-radius: 50%;
+  color: #1e96fc;
+}
+
+.social-link-sm:hover {
+  box-shadow: #235f943d 0 10px 15px;
+  transform: translateY(-5px);
 }
