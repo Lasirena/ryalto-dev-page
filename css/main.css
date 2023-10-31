@@ -378,6 +378,28 @@ Footer styles
 */
 
 footer {
-  padding-top: 52px;
-  padding-bottom: 52px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.footer-links-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  max-width: 150px;
+  margin-bottom: 24px;
+}
+
+.footer-sitemap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: end;
+}
+
+.footer-sitemap a:hover {
+  color: #1e96fc;
 }
