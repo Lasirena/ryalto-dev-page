@@ -33,6 +33,28 @@ a {
 
 /* 
 ==================
+Utility classes
+================== 
+*/
+
+.bg-primary {
+  background-color: #1e96fc !important;
+}
+
+.bg-secondary {
+  background-color: #ffc600 !important;
+}
+
+.bg-tertiary {
+  background-color: #eb5757 !important;
+}
+
+.bg-purple {
+  background-color: #8b57eb !important;
+}
+
+/* 
+==================
 Content segmentation
 ================== 
 */
@@ -87,12 +109,6 @@ em {
   overflow: hidden;
 }
 
-/* em::before {
-  content: '';
-  background-color: #ffc600;
-  position: absolute;
-} */
-
 .body-text-lg {
   font-size: 20px;
 }
@@ -142,6 +158,11 @@ Buttons
 .btn-pagination.active {
   background-color: #1e96fc;
   color: #ffffff;
+}
+
+.btn-pagination:hover,
+.btn-pagination:focus {
+  box-shadow: inset 5rem -5rem 0 0 #ffc600;
 }
 
 /* 
@@ -286,8 +307,10 @@ Blog styles
 .blog-navigation {
   margin-bottom: 48px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  gap: 48px;
 }
 
 .blog-pagination {
