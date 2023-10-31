@@ -230,12 +230,21 @@ Blog styles
   margin-bottom: 48px;
 }
 
+.blog-card a {
+  display: block;
+}
+
 .blog-card {
   padding: 36px;
   background-color: #f0f4f8;
   border-radius: 20px;
   flex-grow: 1;
   overflow: hidden;
+}
+
+.blog-card:hover {
+  box-shadow: #235f943d 0 10px 30px;
+  transform: translate(5px, -5px);
 }
 
 .blog-card-lg {
