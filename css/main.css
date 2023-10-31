@@ -1,5 +1,17 @@
 /* 
 ==================
+Define global CSS variables
+================== 
+*/
+
+:root {
+  --color-primary: #1e96fc;
+  --color-secondary: #ffc600;
+  --color-tertiary: #eb5757;
+}
+
+/* 
+==================
 Default elements styling
 ================== 
 */
@@ -38,15 +50,15 @@ Utility classes
 */
 
 .bg-primary {
-  background-color: #1e96fc !important;
+  background-color: var(--color-primary) !important;
 }
 
 .bg-secondary {
-  background-color: #ffc600 !important;
+  background-color: var(--color-secondary) !important;
 }
 
 .bg-tertiary {
-  background-color: #eb5757 !important;
+  background-color: var(--color-tertiary) !important;
 }
 
 .bg-purple {
@@ -87,7 +99,7 @@ h2::before {
   position: absolute;
   height: 8px;
   width: 80px;
-  background-color: #1e96fc;
+  background-color: var(--color-primary);
   transform: translateY(96px);
 }
 
@@ -102,7 +114,10 @@ h4 {
 }
 
 em {
-  background-image: linear-gradient(#ffc600, #ffc600);
+  background-image: linear-gradient(
+    var(--color-secondary),
+    var(--color-secondary)
+  );
   background-position: 0 0.55em;
   background-repeat: no-repeat;
   font-style: normal;
@@ -127,13 +142,13 @@ Buttons
 }
 
 .btn-primary {
-  background-color: #1e96fc;
+  background-color: var(--color-primary);
   color: #ffffff;
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
-  box-shadow: inset 4rem -4rem 0 0 #ffc600;
+  box-shadow: inset 4rem -4rem 0 0 var(--color-secondary);
   color: #000000;
 }
 
@@ -145,24 +160,39 @@ Buttons
 
 .btn-outline:hover,
 .btn-outline:focus {
-  box-shadow: inset 4rem -4rem 0 0 #ffc600;
+  box-shadow: inset 4rem -4rem 0 0 var(--color-secondary);
 }
 
 .btn-pagination {
-  border-radius: 38px;
-  padding: 24px 32px;
+  width: 72px;
+  height: 72px;
+  text-align: center;
+  border-radius: 50%;
   font-weight: 700;
   font-size: 20px;
 }
 
+.btn-pagination svg {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.btn-pagination span {
+  display: block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .btn-pagination.active {
-  background-color: #1e96fc;
+  background-color: var(--color-primary);
   color: #ffffff;
 }
 
 .btn-pagination:hover,
 .btn-pagination:focus {
-  box-shadow: inset 5rem -5rem 0 0 #ffc600;
+  box-shadow: inset 5rem -5rem 0 0 var(--color-secondary);
 }
 
 /* 
@@ -215,7 +245,7 @@ Intro styles
 
 .social-link-lg {
   border-radius: 50%;
-  color: #ffc600;
+  color: var(--color-secondary);
 }
 
 .social-link-lg:hover {
@@ -280,7 +310,7 @@ Blog styles
 }
 
 .blog-card-tag-blue {
-  color: #1e96fc;
+  color: var(--color-primary);
   margin-bottom: 16px;
 }
 
@@ -386,7 +416,7 @@ Main navbar styles
 }
 
 .nav-main-link:hover {
-  color: #1e96fc;
+  color: var(--color-primary);
 }
 
 /* 
@@ -419,7 +449,7 @@ footer {
 }
 
 .footer-sitemap a:hover {
-  color: #1e96fc;
+  color: var(--color-primary);
 }
 
 .social-links-list-sm {
@@ -431,7 +461,7 @@ footer {
   max-width: 64px;
   max-height: 64px;
   border-radius: 50%;
-  color: #1e96fc;
+  color: var(--color-primary);
 }
 
 .social-link-sm:hover {
