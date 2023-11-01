@@ -682,29 +682,64 @@ Media queries
 }
 
 @media (max-width: 576px) {
-  html {
-    font-size: 12px;
-  }
-
   h1 {
-    font-size: 40px;
+    font-size: 64px;
   }
 
   h2 {
+    font-size: 40px;
+  }
+
+  h2::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 64px;
+    background-color: var(--color-primary);
+    transform: translateY(72px);
+  }
+
+  h3 {
     font-size: 32px;
   }
 
-  .body-text-lg {
-    font-size: 12px;
-  }
-
   .intro-component {
-    padding-top: 180px;
-    padding-bottom: 180px;
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 
   .social-link-lg {
-    max-width: 64px;
-    max-height: 64px;
+    max-width: 48px;
+    max-height: 48px;
+  }
+
+  .social-link-sm {
+    max-width: 36px;
+    max-height: 36px;
+  }
+
+  .nav-mobile-component {
+    height: 80px;
+    border-top: 2px solid #f8f7fa;
+  }
+
+  .nav-mobile-link img {
+    width: 24px;
+  }
+
+  .nav-mobile-link.active::before {
+    height: 2px;
+    width: 64px;
+    background-color: var(--color-secondary);
+    transform: translate(-20px, -27px);
+  }
+
+  footer {
+    padding-bottom: 140px;
+  }
+
+  .footer-sitemap {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
