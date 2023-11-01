@@ -48,6 +48,11 @@ a {
   display: inline-block;
 }
 
+button {
+  outline: 0;
+  border: 0;
+}
+
 /* 
 ==================
 Utility classes
@@ -198,6 +203,11 @@ Buttons
 .btn-pagination:hover,
 .btn-pagination:focus {
   box-shadow: inset 5rem -5rem 0 0 var(--color-secondary);
+}
+
+.btn-search {
+  border-radius: 50%;
+  padding: 12px 15px;
 }
 
 /* 
@@ -420,12 +430,33 @@ Blog styles
   gap: 16px;
 }
 
-.blog-search-area {
+.blog-search {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 40%;
   font-size: 20px;
-  padding: 32px;
+  padding: 12px;
   border-radius: 50px;
   border: none;
   background-color: #f0f4f8;
+}
+
+.blog-search-area {
+  padding-left: 16px;
+  outline: none;
+  background-color: #f0f4f8;
+  border: none;
+}
+
+.btn-search img {
+  width: 32px;
+}
+
+.blog-search:focus {
+  outline: none;
+  outline: 2px solid #235f943d;
+  box-shadow: #235f943d 0 10px 15px;
 }
 
 /* 
