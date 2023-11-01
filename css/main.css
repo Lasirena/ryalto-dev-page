@@ -513,8 +513,23 @@ Mobile navbar styles
 }
 
 .nav-mobile-links-list {
+  height: 100%;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-mobile-link img {
+  width: 40px;
+}
+
+.nav-mobile-link.active::before {
+  content: '';
+  position: absolute;
+  height: 4px;
+  width: 80px;
+  background-color: var(--color-secondary);
+  transform: translate(-20px, -40px);
 }
 
 /* 
