@@ -212,6 +212,11 @@ Buttons
   padding: 12px 15px;
 }
 
+.btn-mobile-nav {
+  border-radius: 50%;
+  padding: 12px 14px;
+}
+
 /* 
 ==================
 Intro styles
@@ -589,9 +594,14 @@ Media queries
 */
 
 @media (max-width: 1200px) {
+  .intro-component {
+    padding-top: 248px;
+    padding-bottom: 248px;
+  }
+
   .intro-bg-image {
-    max-width: 1000px;
-    top: -90%;
+    max-width: 900px;
+    top: -80%;
     right: -30%;
   }
 
@@ -610,6 +620,11 @@ Media queries
 }
 
 @media (max-width: 992px) {
+  .social-link-lg {
+    max-width: 100px;
+    max-height: 100px;
+  }
+
   .nav-main-component {
     display: none;
   }
@@ -620,6 +635,17 @@ Media queries
 
   footer {
     padding-bottom: 200px;
+  }
+
+  .footer-links-container {
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+
+  .footer-sitemap {
+    flex-direction: row;
+    gap: 64px;
+    font-size: 20px;
   }
 }
 
