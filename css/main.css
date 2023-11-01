@@ -671,6 +671,10 @@ Media queries
     right: -30%;
   }
 
+  .blog-card-img {
+    max-height: 400px;
+  }
+
   .blog-card-details {
     flex-direction: column-reverse;
     align-items: flex-start;
@@ -734,6 +738,10 @@ Media queries
   .social-link-sm {
     max-width: 48px;
     max-height: 48px;
+  }
+
+  .blog-card-img {
+    max-height: 280px;
   }
 
   .blog-pagination {
