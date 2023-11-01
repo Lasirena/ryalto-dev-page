@@ -606,15 +606,8 @@ Media queries
   }
 
   .socials-component .content-wrapper::before {
-    content: '';
-    position: absolute;
-    width: 811px;
-    height: 811px;
     left: -8%;
     top: -20%;
-    overflow: hidden;
-    z-index: -1;
-    background: url('/assets/svg/bg/socials-bg.svg') no-repeat;
     background-size: 45%;
   }
 }
@@ -623,6 +616,15 @@ Media queries
   .social-link-lg {
     max-width: 100px;
     max-height: 100px;
+  }
+
+  .blog-pagination {
+    flex-basis: 100%;
+    justify-content: space-evenly;
+  }
+
+  .blog-search {
+    flex-basis: 100%;
   }
 
   .nav-main-component {
@@ -650,7 +652,59 @@ Media queries
 }
 
 @media (max-width: 768px) {
+  .social-link-lg {
+    max-width: 80px;
+    max-height: 80px;
+  }
+
+  .socials-component .content-wrapper::before {
+    left: -10%;
+    top: -20%;
+    background-size: 38%;
+  }
+
+  .intro-bg-image {
+    opacity: 40%;
+    max-width: 900px;
+    top: -80%;
+    right: -30%;
+  }
+
+  .blog-card-details {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .footer-sitemap {
+    gap: 40px;
+  }
 }
 
 @media (max-width: 576px) {
+  html {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  .body-text-lg {
+    font-size: 12px;
+  }
+
+  .intro-component {
+    padding-top: 180px;
+    padding-bottom: 180px;
+  }
+
+  .social-link-lg {
+    max-width: 64px;
+    max-height: 64px;
+  }
 }
